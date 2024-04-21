@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'apptelemedicina.urls'
+ROOT_URLCONF = 'healing.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'apptelemedicina.wsgi.application'
+WSGI_APPLICATION = 'healing.wsgi.application'
 
 
 # Database
@@ -133,6 +133,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Messages
 from django.contrib.messages import constants
+
 MESSAGE_TAGS = {
  constants.DEBUG: 'alert-primary',
  constants.ERROR: 'alert-danger',
